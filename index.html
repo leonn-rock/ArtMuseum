@@ -1,88 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ArtMuseum</title>
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/paisagem.css" media="screen and(orientation:landscape)">
-    <link rel="stylesheet" href="styles/retrato.css" media="screen and (orientation:portrait)">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="styles/paisagem.css"
+      media="screen and(orientation:landscape)"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/retrato.css"
+      media="screen and (orientation:portrait)"
+    />
+  </head>
+  <body>
     <div id="pagina">
-        <header>
-            <h1>ArtMuseum</h1>
-            <nav>            
-                <div id="menu" onclick="mostrar()">
-                    <div id="dash"></div>
-                    <ul id="lista">
-                        <a href="#"><li id="link1">Home</li></a>
-                        <a href="#"><li id="link2">Galeria</li></a>
-                        <a href="#"><li id="link3">Contato</li></a>
-                    </ul>
-                </div>
-            </nav>
-        </header>       
-    
-        <main>
-            <h2>Destaque da semana</h2>
-            <div id="destaque">
-                <h2>Elizabeth</h2>
-                <picture>
-                    <source media="(max-width: 1130px)" srcset="images/elizabethMenor.png">
-                    <source media="(min-width: 1600px)" srcset="images/elizabethLandscape.png">
-                    <img src="images/elizabeth.jpg" alt="">
-                </picture>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ab odio consequatur earum optio praesentium. Iure amet magni dignissimos corporis, accusantium rerum earum quae?</p>
-                <a href="#" class="botao">Ver sobre</a>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae pariatur architecto inventore, magnam delectus voluptate fugiat officia voluptatibus at fugit adipisci dicta commodi, accusamus rem similique ipsa, eum deserunt iusto?</p>
-            <h2>Artes</h2>
-            <div id="galeria">
-                <div class="item">
-                    <h2>Título da arte</h2>
-                    <div class="banner"></div>
-                    <p>Descrição da arte</p>
-                    <a href="#" class="botao">Ver sobre</a>
-                </div>
-                <div class="item">
-                    <h2>Título da arte</h2>
-                    <div class="banner"></div>
-                    <p>Descrição da arte</p>
-                    <a href="#" class="botao">Ver sobre</a>
-                </div>
-                <div class="item">
-                    <h2>Título da arte</h2>
-                    <div class="banner"></div>
-                    <p>Descrição da arte</p>
-                    <a href="#" class="botao">Ver sobre</a>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <p>ArtMuseum &#169; 2023</p>
-        </footer>
+      <header>
+        <h1>ArtMuseum</h1>
+        <nav>
+          <div id="menu" onclick="mostrar()">
+            <div id="dash"></div>
+            <ul id="lista">
+              <a href="#"><li id="link1">Home</li></a>
+              <a href="#"><li id="link2">Galeria</li></a>
+              <a href="#"><li id="link3">Contato</li></a>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <h2>Destaque da semana</h2>
+        <div id="destaque">
+          <h2>Elizabeth</h2>
+          <picture>
+            <source
+              media="(max-width: 1130px)"
+              srcset="images/elizabethMenor.webp"
+            />
+            <source
+              media="(min-width: 1600px)"
+              srcset="images/elizabethLandscape.webp"
+            />
+            <img src="images/elizabeth.webp" alt="" />
+          </picture>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ab odio
+            consequatur earum optio praesentium. Iure amet magni dignissimos
+            corporis, accusantium rerum earum quae?
+          </p>
+          <a href="#" class="botao">Ver sobre</a>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae pariatur
+          architecto inventore, magnam delectus voluptate fugiat officia
+          voluptatibus at fugit adipisci dicta commodi, accusamus rem similique
+          ipsa, eum deserunt iusto?
+        </p>
+        <h2>Artes</h2>
+        <div id="galeria">
+          <div class="item">
+            <h2>Título da arte</h2>
+            <div class="banner"></div>
+            <p>Descrição da arte</p>
+            <a href="#" class="botao">Ver sobre</a>
+          </div>
+          <div class="item">
+            <h2>Título da arte</h2>
+            <div class="banner"></div>
+            <p>Descrição da arte</p>
+            <a href="#" class="botao">Ver sobre</a>
+          </div>
+          <div class="item">
+            <h2>Título da arte</h2>
+            <div class="banner"></div>
+            <p>Descrição da arte</p>
+            <a href="#" class="botao">Ver sobre</a>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>ArtMuseum &#169; 2023</p>
+      </footer>
     </div>
-    <script> /* O JAVASCRIPT INTERPRETA AS LINHAS SEM A NECESSIDADE DE PONTO E VÍRGULA*/
-        function mostrar(){
-            if (dash.style.display =="none"){ /*fechar menu*/
-                dash.style.display = "block"
-                lista.style.display = "none"
-                link1.style.display = "none"
-                link2.style.display = "none"
-                link3.style.display = "none"
-
-            }
-            else{ /*abrir menu*/
-                dash.style.display = "none"
-                lista.style.display = "flex"
-                link1.style.display = "block"
-                link2.style.display = "block"
-                link3.style.display = "block"
-            }
-
+    <script>
+      /* O JAVASCRIPT INTERPRETA AS LINHAS SEM A NECESSIDADE DE PONTO E VÍRGULA*/
+      function mostrar() {
+        if (dash.style.display == 'none') {
+          /*fechar menu*/
+          dash.style.display = 'block';
+          lista.style.display = 'none';
+          link1.style.display = 'none';
+          link2.style.display = 'none';
+          link3.style.display = 'none';
+        } else {
+          /*abrir menu*/
+          dash.style.display = 'none';
+          lista.style.display = 'flex';
+          link1.style.display = 'block';
+          link2.style.display = 'block';
+          link3.style.display = 'block';
         }
+      }
     </script>
-</body>
+  </body>
 </html>
