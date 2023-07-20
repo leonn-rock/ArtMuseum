@@ -77,8 +77,8 @@ img{
     font-size: 12pt;
 }
 footer{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 840px;
 }
