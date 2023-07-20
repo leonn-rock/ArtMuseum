@@ -1,0 +1,180 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+#pagina{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    width: 100%;
+    background-color: #2b2b2b;
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+h1{
+    font-weight: bold;
+    font-size: 36pt;
+}
+nav{
+    width: 35%;
+    height: 60px;
+    display: flex;
+    align-items: flex-start;
+}
+#dash{
+    display: none;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+nav ul a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16pt;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    min-width: 1000px;
+    text-align: center;
+    padding: 20px;
+}
+main h2{
+    width: 70%;
+    border-bottom: 4px solid #f61149;
+    padding: 20px;
+    margin-bottom:30px;
+}
+#destaque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    border: 1px solid #838383;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 30px;
+}
+#destaque h2{
+    border: none;
+    padding: 0px;
+}
+img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    margin: 30px auto;
+}
+p{
+    margin-bottom: 20px;
+    font-size: 14pt;
+}
+#destaque p {
+    color: #838383;
+}
+.botao{
+    background-color: #f61149;
+    color: white;
+    font-size: 14pt;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#galeria{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+    margin: 30px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: auto;
+    border: 1px solid #838383;
+    border-radius: 10px;
+    padding: 20px;
+}
+#galeria h2{
+    border: none;
+    margin: 0px;
+    width: 100%;
+}
+.banner{
+    height: 150px;
+    width: 100%;
+    background-color: #838383;
+    margin: 0px auto;
+    background-size: cover;
+}
+#galeria .item:nth-child(1) .banner{
+    background-image: url(../images/arte3.jpg);
+}
+#galeria .item:nth-child(2) .banner{
+    background-image: url(../images/arte2.jpg);
+}
+#galeria .item:nth-child(3) .banner{
+    background-image: url(../images/arte1.jpg);
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #2b2b2b;
+    color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width : 1130px){
+    img{
+        width: 100%;
+        height: auto;
+    }
+    main{
+        width: 80%;
+        min-width: 800px;
+    }
+    #galeria h2{
+        font-size: 12pt;
+    }
+    #galeria p{
+        margin: 10px;
+        font-size: 10pt;
+    }
+    #galeria .botao{
+        font-size: 10pt;
+    }
+    footer p{
+        width: 100%;
+    }
+}
+@media screen and (min-width : 1600px){
+    img{
+        width: 1600px;
+        height: auto;
+    }
+}
